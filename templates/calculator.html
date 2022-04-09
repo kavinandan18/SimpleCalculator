@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Application</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    {% include 'cdnlines.html' %}
+</head>
+<body class="body">
+    <div class="contatiner">
+      <div class="row">
+            <div class="offset-md-4 col-md-4 Calculator">
+            <h1 class="bg-danger text-center text-white heading">Calculator Application</h1>
+            <form method="POST" >{% csrf_token %}
+                <input type="calculator" value="{{result}}" class="form-control display"><br>
+            <div class="row">
+                <div class="offset-md-2 col-md-4">
+                    <input type="text" name="first" id="firstnumber" placeholder=" First Number..."class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" name="second" id="firstnumber" placeholder=" Second Number..."class="form-control">
+                </div>
+            </div> <br>
+                <center>  
+                <input type="submit" name="but" value="Add" class="btn btn-outline-danger btn-lg"> 
+                <input type="submit" name="but" value="Sub" class="btn btn-outline-primary btn-lg">
+                <input type="submit" name="but" value="Mul" class="btn btn-outline-success btn-lg">
+                <input type="submit" name="but" value="Div" class="btn btn-outline-warning btn-lg">       
+                </center>
+            </form>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
+

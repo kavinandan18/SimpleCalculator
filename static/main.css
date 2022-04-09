@@ -1,0 +1,35 @@
+.Calculator {
+  background-color: darkslategray;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 100px;
+  box-shadow: 0px 0px 20px red;
+}
+input[type="calculator"] {
+  height: 75px;
+  background-color:whitesmoke;
+  border: 2px solid gray;
+  font-size: 40px;
+  color: red;
+  
+  
+}
+.body{
+    background-color: black;
+}
+.heading{
+    padding: 10px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0px 0px 10px white;
+    font-family: cursive;
+}
+
+input[name="but"]{
+background-color: rgb(122, 15, 29);
+box-shadow: 0px 0px 10px white;
+margin-left: 10px;
+font-family: cursive;
+
+}
